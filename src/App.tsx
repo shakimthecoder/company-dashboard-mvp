@@ -31,8 +31,7 @@ import {
   CategoryShow,
 } from "./pages/categories";
 import { ForgotPassword } from "./pages/forgotPassword";
-import { Login } from "./pages/login";
-import { Register } from "./pages/register";
+import { Login, Register, Home } from "./pages";
 
 
 function App() {
@@ -121,6 +120,7 @@ function App() {
                       </Authenticated>
                     }
                   >
+                    <Route path="/home" element={<Home />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/register" element={<Register />} />
                     <Route
